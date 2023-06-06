@@ -1,0 +1,300 @@
+body {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: arial;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+h2, h3, h4 {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  font-size: 20px;
+}
+
+.cadre {
+  background: #E2F3DC;
+  border: 3px solid #C1E6B6;
+  margin: 20px 100px;
+  padding: 30px 70px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.color-green {
+  color: #458D2E;
+}
+
+.btn-pink {
+  display: inline-block;
+  color: white;
+  background: #C86472;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+
+.logo {
+  height: 60px;
+  margin: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E2F3DC;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 10px 30px;
+  color: #9F3442;
+}
+
+.link:hover {
+  color: #458D2E;
+}
+
+
+.line-transparent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-light {
+  height: 5px;
+  width: 20%;
+  background: #EE9CA7;
+}
+
+.line-medium {
+  height: 5px;
+  width: 30%;
+  background: #C86472;
+}
+
+.line-hard {
+  height: 5px;
+  width: 50%;
+  background: #9F3442;
+}
+
+
+.horizontal-position {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;
+}
+
+.cadre-preparation {
+  background: #E2F3DC;
+  border: 3px solid #C1E6B6;
+  margin: 0px 0px 0px 10px;
+  padding: 30px 70px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.cadre-ingredients {
+  background: #E2F3DC;
+  border: 3px solid #C1E6B6;
+  margin: 0px 10px 0px 0px;
+  padding: 30px 70px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+  width: 1000px;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.socials {
+  font-size: 40px;
+  color: green;
+}
+
+#mc_embed_signup {
+  background: #E2F3DC;
+  clear:left;
+  width: 50%;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*code pen*/
+
+
+body {
+  animation: bgDarken 10s linear;
+  overflow-x: hidden;                  /*modiffié*/
+}
+
+.machine {
+  position: relative;
+  margin-top: 20%;
+  border-top: 5px solid white;
+  border-bottom: 2px solid white;
+  height: 200px;
+  background: #E2F3DC;                  /*modiffié*/
+  background-size: 15px 15px;
+  background-position: 0 0, 30px 30px;
+  width: 100%;
+}
+.machine .belt-container {
+  position: absolute;
+  left: -1500px;
+  animation: moveBelt 30s infinite linear;
+}
+.machine .belt {
+  position: absolute;
+  top: -10px;
+  height: 5px;
+  width: 100px;
+  background-color: black;
+}
+.machine .belt .cake .layer {
+  border-radius: 5px 5px 0 0;
+}
+.machine .belt .cake .layer-1 {
+  position: relative;
+  top: -25px;
+  left: 12.5px;
+  border-radius: 0;
+  height: 25px;
+  width: 75%;
+}
+.machine .belt .cake .filling {
+  position: relative;
+  top: -50px;
+  left: 12.5px;
+  height: 3px;
+  width: 75%;
+  background-color: white;
+}
+.machine .belt .cake .layer-2 {
+  position: relative;
+  top: -73px;
+  left: 12.5px;
+  height: 20px;
+  width: 75%;
+}
+.machine .belt .cake .topping {
+  position: relative;
+  top: -98px;
+  left: 20px;
+  height: 5px;
+  width: 60%;
+}
+.machine .belt .cake .candle {
+  position: absolute;
+  top: -65px;
+  left: calc(50% - 12.5px);
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  transform: rotate(90deg);
+}
+.machine .belt .cake .candle:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -10px;
+  right: 25px;
+  height: 5px;
+  background-color: orange;
+  box-shadow: 0 0 140px 15px yellow;
+  animation: candleFlicker 3s linear infinite;
+}
+
+@keyframes moveBelt {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -1500px;
+  }
+}
+@keyframes candleFlicker {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    box-shadow: 0 0 75px 10px yellow;
+  }
+  15% {
+    box-shadow: none;
+  }
+  18% {
+    box-shadow: 0 0 75px 10px yellow;
+  }
+  100% {
+    box-shadow: 0 0 140px 15px yellow;
+  }
+}
+
